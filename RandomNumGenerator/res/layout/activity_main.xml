@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/etStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter starting range"
+        android:singleLine="true"
+        android:inputType="number"
+         />
+
+    <EditText
+        android:id="@+id/etEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ending range"
+        android:singleLine="true"
+        android:inputType="number"
+         />
+    
+    <Button 
+        android:id="@+id/btnGenerateNums"
+        android:text="Generate Random Numbers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView 
+        android:id="@+id/tvResultInTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Result in TextView:"
+        android:visibility="gone"
+        />
+    <TextView 
+        android:id="@+id/tvGeneratedNums"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView 
+        android:id="@+id/tvResultInListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Result in List:"
+        android:visibility="gone"
+        />
+    <ListView 
+        android:id="@+id/lvGeneratedNums"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+    
+</LinearLayout>
